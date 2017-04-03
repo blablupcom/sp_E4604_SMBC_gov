@@ -114,6 +114,11 @@ for link in links:
             csvYr = '2015'
         if '1617' in csvYr:
             csvYr = '2016'
+        if 'Jan 1617' in csvfile:
+            csvYr = '2017'
+        if 'Feb 1617' in csvfile:
+            csvYr = '2017'
+
         csvMth = convert_mth_strings(csvMth.upper())
         data.append([csvYr, csvMth, url])
 
